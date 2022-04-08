@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f9753df0df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="remove-project-btn">&times;</button>
+      <button id="add-todo-btn" class="active">&plus;</button>
+      <section class="header">
+        <div class="burger-menu">
+          <div class="burger"></div>
+        </div>
+        <h1><i class="fa-solid fa-list"></i>YOUR TODOS</h1>
+      </section>
+      <div class="main-content-menu mobile-closed">
+        <ul class="menu">
+          <li>
+            <button id="inbox"><i class="fa-solid fa-inbox"></i>Inbox</button>
+          </li>
+          <li class="projects">
+            <button class="open-projects-list-btn">
+              <i class="fa-solid fa-clipboard-list"></i>Projects
+            </button>
+          </li>
+          <li id="projects-list-li"><ul class="projects-list"></ul></li>
+        </ul>
+        <button id="add-project-btn">&plus; Add Project</button>
+      </div>
+      <div class="main-content-todos">
+        <h2 class="active-project-header">Your TODOS</h2>
+        <ul class="todos-list"></ul>
+      </div>
+      <footer>
+        Copyright &copy 2022 Klaudiusz Biegacz
+        <a href="https://github.com/KlaudiuszB5528" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </footer>
+      <div class="modal">
+        <form id="todo-form">
+          <button id="close-btn" type="reset">&times;</button>
+          <label for="todo-title">Title</label>
+          <input
+            type="text"
+            name="todo-title"
+            id="todo-title"
+            autocomplete="off"
+            maxlength="35"
+            required
+          />
+          <label for="todo-date">Due Date</label>
+          <input type="date" name="todo-date" id="todo-date" required />
+          <label for="todo-priority">Priority</label>
+          <select name="todo-priority" id="todo-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <label for="todo-description">Description</label>
+          <textarea
+            name="todo-description"
+            id="todo-description"
+            rows="9"
+            maxlength="200"
+          ></textarea>
+          <button type="submit" id="todo-submit-btn"></button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "TODOS": [
+    {
+      "project": "Your TODOS",
+      "title": "test1",
+      "dueDate": "2022-04-15",
+      "priority": "medium",
+      "description": "",
+      "isChecked": false,
+      "id": 1
+    },
+    {
+      "project": "Your TODOS",
+      "title": "test2",
+      "dueDate": "2022-04-15",
+      "priority": "high",
+      "description": "",
+      "isChecked": true,
+      "id": 2
+    },
+    {
+      "project": "Your TODOS",
+      "title": "test3",
+      "dueDate": "2022-04-23",
+      "priority": "low",
+      "description": "",
+      "isChecked": false,
+      "id": 3
+    }
+  ],
+  "PROJECTS": [
+    {
+      "projectName": "Your TODOS",
+      "id": 1
+    },
+    {
+      "projectName": "testowy",
+      "id": 2
+    }
+  ]
+}
