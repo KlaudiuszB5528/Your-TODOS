@@ -11,7 +11,7 @@ import {
 } from "./functions/utils";
 import handleMenu from "./functions/handleMenu";
 
-const App = (() => {
+(function App() {
   const addBtn = document.getElementById("add-todo-btn");
   const closeBtn = document.getElementById("close-btn");
   const addProjectBtn = document.getElementById("add-project-btn");
