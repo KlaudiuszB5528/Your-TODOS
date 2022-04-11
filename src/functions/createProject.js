@@ -15,6 +15,7 @@ export default function addProject() {
 
   async function handleProjectInput(e) {
     if (e.key === "Enter") {
+      if (!projectInput.value) return;
       const projectsList = document.querySelector(".projects-list");
       mainContentMenu.removeChild(projectInput);
       mainContentMenu.appendChild(btn);

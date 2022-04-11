@@ -563,6 +563,9 @@ form > textarea {
     bottom: 3.8rem;
     right: 1rem;
   }
+  #remove-project-btn {
+    top: 16%;
+  }
   #add-project-input {
     width: 110px;
     position: absolute;

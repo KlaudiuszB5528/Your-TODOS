@@ -27,5 +27,5 @@ export default async function handleList(e) {
 
 async function deleteFN(index) {
   let uri = `http://localhost:3000/TODOS/${index}`;
-  const res = await fetch(uri, { method: "DELETE" });
+  await fetch(uri, { method: "DELETE" });
 }

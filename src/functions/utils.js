@@ -55,8 +55,10 @@ function setFormInputs(index) {
   let prioritySelect = document.getElementById("todo-priority");
   let descriptionInput = document.getElementById("todo-description");
   let todo = document.querySelector(`[data-index="${index}"]`);
+  console.log(todo);
 
   const todoTitle = todo.querySelector(".title");
+
   titleInput.value = todoTitle.textContent;
 
   const todoPriority = todo.querySelector(".fa-flag");
@@ -93,14 +95,14 @@ function createProjectLi(name, index) {
   const projectsListEl = document.createElement("li");
   const projectsListElBtn = document.createElement("button");
   projectsListElBtn.classList.add("project-name");
-  projectsListEl.dataset.index = index;
+  projectsListEl.dataset.projectIndex = index;
   projectsListElBtn.textContent = name;
   projectsListEl.appendChild(projectsListElBtn);
   projectsList.appendChild(projectsListEl);
 }
 
 async function removeProject(e) {
-  const index = e.target.dataset.index;
+  const index = e.target.dataset.projectIndex;
   const projectName = document.querySelector(".active-project-header");
   let uri = `http://localhost:3000/PROJECTS/${index}`;
   await fetch(uri, { method: "DELETE" });
