@@ -26,43 +26,12 @@
       "description": "",
       "isChecked": false,
       "id": 3
-    },
-    {
-      "project": "Bobry",
-      "title": "moje uszanowanie",
-      "dueDate": "2022-04-23",
-      "priority": "medium",
-      "description": "Hejka",
-      "isChecked": false,
-      "id": 4
-    },
-    {
-      "project": "Bobry",
-      "title": "jestem z kobry",
-      "dueDate": "2022-04-30",
-      "priority": "high",
-      "description": "internet dobry",
-      "isChecked": false,
-      "id": 5
-    },
-    {
-      "project": "Bobry",
-      "title": "today",
-      "dueDate": "2022-04-10",
-      "priority": "low",
-      "description": "today",
-      "isChecked": false,
-      "id": 6
     }
   ],
   "PROJECTS": [
     {
       "projectName": "Your TODOS",
       "id": 1
-    },
-    {
-      "projectName": "Bobry",
-      "id": 3
     }
   ]
 }
